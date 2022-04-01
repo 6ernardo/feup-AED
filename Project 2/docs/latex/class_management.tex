@@ -1,0 +1,117 @@
+\hypertarget{class_management}{}\doxysection{Management Class Reference}
+\label{class_management}\index{Management@{Management}}
+
+
+{\ttfamily \#include $<$Management.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_management_ac74da37d238f1cf4bae037cc41cf0041}{main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Menu for the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_management_ae5a59f29a451330fbb2d1ad25d1dafcf}{read\+Stops}} ()
+\begin{DoxyCompactList}\small\item\em reads \mbox{\hyperlink{class_stops}{Stops}} from the \char`\"{}stops.\+csv\char`\"{} file, adds them to the database \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_management_a38ef59a65418c273e8cc1b614973d6ab}{read\+Lines}} ()
+\begin{DoxyCompactList}\small\item\em reads \mbox{\hyperlink{class_lines}{Lines}} from the \char`\"{}lines.\+csv\char`\"{} file, adds them to the database \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_management_ae197a7c0de97bd13cbb9e600fb58497d}{haversine}} (float lat1, float lon1, float lat2, float lon2)
+\begin{DoxyCompactList}\small\item\em uses the Haversine formula do calculate the distance between two points, given their latitudes and longitudes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_management_aecc2191fea5f7a619bfdcbee0bed82d9}{add\+Line\+To\+Graph}} (\mbox{\hyperlink{class_lines}{Lines}} line)
+\begin{DoxyCompactList}\small\item\em reads a \char`\"{}lines\+\_\+\mbox{[}\+LINECODE\mbox{]}\+\_\+\mbox{[}\+DIR\mbox{]}.\+csv\char`\"{} type of file, in both directions and adds each edge to the graph \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stops}{Stops}} \mbox{\hyperlink{class_management_a3d38595850d7828395b1201fa19607ae}{stop\+Finder}} (string code)
+\begin{DoxyCompactList}\small\item\em returns the stop with the given code \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_management_aecc2191fea5f7a619bfdcbee0bed82d9}\label{class_management_aecc2191fea5f7a619bfdcbee0bed82d9}} 
+\index{Management@{Management}!addLineToGraph@{addLineToGraph}}
+\index{addLineToGraph@{addLineToGraph}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{addLineToGraph()}{addLineToGraph()}}
+{\footnotesize\ttfamily void Management\+::add\+Line\+To\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lines}{Lines}}}]{line }\end{DoxyParamCaption})}
+
+
+
+reads a \char`\"{}lines\+\_\+\mbox{[}\+LINECODE\mbox{]}\+\_\+\mbox{[}\+DIR\mbox{]}.\+csv\char`\"{} type of file, in both directions and adds each edge to the graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & is the line that is getting added to the graph \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_management_ae197a7c0de97bd13cbb9e600fb58497d}\label{class_management_ae197a7c0de97bd13cbb9e600fb58497d}} 
+\index{Management@{Management}!haversine@{haversine}}
+\index{haversine@{haversine}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{haversine()}{haversine()}}
+{\footnotesize\ttfamily float Management\+::haversine (\begin{DoxyParamCaption}\item[{float}]{lat1,  }\item[{float}]{lon1,  }\item[{float}]{lat2,  }\item[{float}]{lon2 }\end{DoxyParamCaption})}
+
+
+
+uses the Haversine formula do calculate the distance between two points, given their latitudes and longitudes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat1} & is the latitude of point 1 \\
+\hline
+{\em lon1} & is the longitude of point 1 \\
+\hline
+{\em lat2} & is the latitude of point 2 \\
+\hline
+{\em lon2} & is the longitude of point 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_management_ac74da37d238f1cf4bae037cc41cf0041}\label{class_management_ac74da37d238f1cf4bae037cc41cf0041}} 
+\index{Management@{Management}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily void Management\+::main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Menu for the user. 
+
+\mbox{\Hypertarget{class_management_a38ef59a65418c273e8cc1b614973d6ab}\label{class_management_a38ef59a65418c273e8cc1b614973d6ab}} 
+\index{Management@{Management}!readLines@{readLines}}
+\index{readLines@{readLines}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{readLines()}{readLines()}}
+{\footnotesize\ttfamily void Management\+::read\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reads \mbox{\hyperlink{class_lines}{Lines}} from the \char`\"{}lines.\+csv\char`\"{} file, adds them to the database 
+
+\mbox{\Hypertarget{class_management_ae5a59f29a451330fbb2d1ad25d1dafcf}\label{class_management_ae5a59f29a451330fbb2d1ad25d1dafcf}} 
+\index{Management@{Management}!readStops@{readStops}}
+\index{readStops@{readStops}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{readStops()}{readStops()}}
+{\footnotesize\ttfamily void Management\+::read\+Stops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reads \mbox{\hyperlink{class_stops}{Stops}} from the \char`\"{}stops.\+csv\char`\"{} file, adds them to the database 
+
+\mbox{\Hypertarget{class_management_a3d38595850d7828395b1201fa19607ae}\label{class_management_a3d38595850d7828395b1201fa19607ae}} 
+\index{Management@{Management}!stopFinder@{stopFinder}}
+\index{stopFinder@{stopFinder}!Management@{Management}}
+\doxysubsubsection{\texorpdfstring{stopFinder()}{stopFinder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stops}{Stops}} Management\+::stop\+Finder (\begin{DoxyParamCaption}\item[{string}]{code }\end{DoxyParamCaption})}
+
+
+
+returns the stop with the given code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & of the desired stop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_stops}{Stops}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_management_8h}{Management.\+h}}\item 
+\mbox{\hyperlink{_management_8cpp}{Management.\+cpp}}\end{DoxyCompactItemize}

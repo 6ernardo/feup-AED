@@ -1,0 +1,133 @@
+\hypertarget{class_min_heap}{}\doxysection{Min\+Heap\texorpdfstring{$<$}{<} K, V \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_min_heap}\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+
+
+{\ttfamily \#include $<$min\+Heap.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_min_heap_a8041a62441509d4fd713e3b1bfad8f31}{Min\+Heap}} (int n, const K \&not\+Found)
+\begin{DoxyCompactList}\small\item\em Default constructor for a \mbox{\hyperlink{class_min_heap}{Min\+Heap}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_min_heap_a17652e042dae3954be25a1cd9e04f3b0}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in a heap. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_min_heap_ae5bd0efd391f31ed67634d5eeb50622e}{has\+Key}} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Returns whether the Heap as the inserted key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_min_heap_a708cab4630ba761be49aea0ae536d772}{insert}} (const K \&key, const V \&value)
+\begin{DoxyCompactList}\small\item\em Insert (K,V) pair in the \mbox{\hyperlink{class_min_heap}{Min\+Heap}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_min_heap_acb40738ccbaf73f7c093f8504387587b}{decrease\+Key}} (const K \&key, const V \&value)
+\begin{DoxyCompactList}\small\item\em Decreases the value of a key. \end{DoxyCompactList}\item 
+K \mbox{\hyperlink{class_min_heap_a3ab07802846cc4314d7ec383180d3b82}{remove\+Min}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the key with the smaller value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_min_heap_a8041a62441509d4fd713e3b1bfad8f31}\label{class_min_heap_a8041a62441509d4fd713e3b1bfad8f31}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!MinHeap@{MinHeap}}
+\index{MinHeap@{MinHeap}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{MinHeap()}{MinHeap()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+\mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::\mbox{\hyperlink{class_min_heap}{Min\+Heap}} (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const K \&}]{not\+Found }\end{DoxyParamCaption})}
+
+
+
+Default constructor for a \mbox{\hyperlink{class_min_heap}{Min\+Heap}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the max number of pairs \\
+\hline
+{\em not\+Found} & is returned when empty \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_min_heap_acb40738ccbaf73f7c093f8504387587b}\label{class_min_heap_acb40738ccbaf73f7c093f8504387587b}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!decreaseKey@{decreaseKey}}
+\index{decreaseKey@{decreaseKey}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{decreaseKey()}{decreaseKey()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+void \mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::decrease\+Key (\begin{DoxyParamCaption}\item[{const K \&}]{key,  }\item[{const V \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Decreases the value of a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & to be decreased \\
+\hline
+{\em value} & to be decreased \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_min_heap_a17652e042dae3954be25a1cd9e04f3b0}\label{class_min_heap_a17652e042dae3954be25a1cd9e04f3b0}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+int \mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::get\+Size}
+
+
+
+Returns the number of elements in a heap. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_min_heap_ae5bd0efd391f31ed67634d5eeb50622e}\label{class_min_heap_ae5bd0efd391f31ed67634d5eeb50622e}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!hasKey@{hasKey}}
+\index{hasKey@{hasKey}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{hasKey()}{hasKey()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+bool \mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::has\+Key (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Returns whether the Heap as the inserted key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & looked for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_min_heap_a708cab4630ba761be49aea0ae536d772}\label{class_min_heap_a708cab4630ba761be49aea0ae536d772}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!insert@{insert}}
+\index{insert@{insert}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+void \mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::insert (\begin{DoxyParamCaption}\item[{const K \&}]{key,  }\item[{const V \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Insert (K,V) pair in the \mbox{\hyperlink{class_min_heap}{Min\+Heap}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & inserted \\
+\hline
+{\em value} & inserted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_min_heap_a3ab07802846cc4314d7ec383180d3b82}\label{class_min_heap_a3ab07802846cc4314d7ec383180d3b82}} 
+\index{MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}!removeMin@{removeMin}}
+\index{removeMin@{removeMin}!MinHeap$<$ K, V $>$@{MinHeap$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{removeMin()}{removeMin()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+K \mbox{\hyperlink{class_min_heap}{Min\+Heap}}$<$ K, V $>$\+::remove\+Min}
+
+
+
+Removes and returns the key with the smaller value. 
+
+\begin{DoxyReturn}{Returns}
+K 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{min_heap_8h}{min\+Heap.\+h}}\end{DoxyCompactItemize}

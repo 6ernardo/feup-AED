@@ -1,0 +1,49 @@
+\hypertarget{graph_8h_source}{}\doxysection{graph.\+h}
+\mbox{\hyperlink{graph_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// AED 2021/2022 -\/ Aula Pratica 09}}
+\DoxyCodeLine{2 \textcolor{comment}{// Pedro Ribeiro (DCC/FCUP) [03/01/2022]}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifndef \_GRAPH\_H\_}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define \_GRAPH\_H\_}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_graph}{Graph}} \{}
+\DoxyCodeLine{15     \textcolor{keyword}{struct }Edge \{}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} dest;   \textcolor{comment}{// Destination node}}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} weight; \textcolor{comment}{// An integer weight}}
+\DoxyCodeLine{18     \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{struct }Node \{}
+\DoxyCodeLine{21         list<Edge> adj; \textcolor{comment}{// The list of outgoing edges (to adjacent nodes)}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{bool} visited;\textcolor{comment}{// As the node been visited on a search?}}
+\DoxyCodeLine{23         \textcolor{keywordtype}{float} distance;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int} predecessor;}
+\DoxyCodeLine{25     \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} n;              \textcolor{comment}{// Graph size (vertices are numbered from 1 to n)}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} hasDir;        \textcolor{comment}{// false: undirect; true: directed}}
+\DoxyCodeLine{29     vector<Node> nodes; \textcolor{comment}{// The list of nodes being represented}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}}();}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}}(\textcolor{keywordtype}{int} nodes, \textcolor{keywordtype}{bool} dir = \textcolor{keyword}{false});}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a982e21d86e6760caa4dc901091103a2c}{addEdge}}(\textcolor{keywordtype}{int} src, \textcolor{keywordtype}{int} dest, \textcolor{keywordtype}{int} weight);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{54     vector<int> \mbox{\hyperlink{class_graph_a0374cdd4aa9a00a84163f1cfdfd8329e}{bfs}}(\textcolor{keywordtype}{int} o, \textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_a41d0da4f9e4a809cdbbc4c49db9f074e}{dijkstra\_distance}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     list<int> \mbox{\hyperlink{class_graph_a68dee2186fca9890aecf5ee5c22cb6ab}{dijkstra\_path}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
