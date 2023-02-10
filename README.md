@@ -1,3 +1,3 @@
-# Algoritmos e Estruturas de Dados
+# feup-AED
 
-Ficheiros dos dois projetos de Algoritmos e Estruturas de Dados, e resolução dos exercícios das aulas práticas.
+Repository containing Project 1, Project 2, and solved exercises from the Algorithms and Data Structures course unit at FEUP.
